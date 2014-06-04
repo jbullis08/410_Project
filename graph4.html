@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<title>First Graph of the Data</title>
+
+<!-- Bootstrap core CSS -->
+<link href="/~jbullis/410_Project/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="jumbotron.css" rel="stylesheet">
+
+<script src="/~jbullis/410_Project/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/highcharts-more.js"></script>
+<script>
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'line'
+            },
+            title: {
+                text: 'Monthly Average Temperature'
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: {
+                    text: 'Temperature (°C)'
+                }
+            },
+            plotOptions: {
+                line: {
+                    dataLabels: {
+                        enabled: true
+                    },
+                    enableMouseTracking: false
+                }
+            },
+            series: [{
+                name: 'Tokyo',
+                data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+            }, {
+                name: 'London',
+                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+            }]
+        });
+    });
+
+
+</script>
+
+</head>
+
+<!-----NAVBAR----->
+
+<body>
+
+<div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand">Asteroid Comparison</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/~jbullis/410_Project/Asteroid.html">Home</a></li>
+                <li><a href="/~jbullis/410_Project/About_Us.html">About Us</a></li>
+                <li><a href="/~jbullis/410_Project/Learned.html">What We've learned</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links to Graphs/Code<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/~jbullis/410_Project/graph1.html">Graph 1</a></li>
+                    <li><a href="/~jbullis/410_Project/graph2.html">Graph 2</a></li>
+                    <li><a href="/~jbullis/410_Project/graph3.html">Graph 3</a></li>
+		    <li><a href="/~jbullis/410_Project/graph4.html">Graph 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="container" style="min-width:310px; max-width:600px height:400px;margin: 0 auto"></div>
+
+<div class="container">
+
+      <div class="starter-template">
+        <h1>First Graph Plot</h1>
+        <p class="lead">This is the spot to go a little more in depth as to what it is exactly that this graph is showing. How we produced it, what chart family we used, blah blah blah.</p>
+      </div>
+
+    </div>
+
+</BODY>
+</HTML>

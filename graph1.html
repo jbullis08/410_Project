@@ -1,0 +1,145 @@
+<HTML>
+<HEAD>
+<title>First Graph of the Data</title>
+
+<link href="/~jbullis/410_Project/css/bootstrap.min.css" rel="stylesheet">
+<link href="starter-template.css" rel="stylesheet">
+
+<script src="/~jbullis/410_Project/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/highcharts-more.js"></script>
+<script>
+$(function () {
+    Highcharts.setOptions({
+        chart: {
+            backgroundColor: {
+                linearGradient: [0, 0, 500, 500],
+                stops: [
+                    [0, 'rgb(255, 255, 255)'],
+                    [1, 'rgb(255, 255, 255)']
+                    ]
+            },
+            borderWidth: 2,
+            plotBackgroundColor: 'rgba(255, 255, 255, .9)',
+            plotShadow: true,
+            plotBorderWidth: 1
+        }
+    });  
+    
+    $('#container').highcharts({
+
+        chart: {
+            type: 'bubble',
+            plotBorderWidth: 1,
+            zoomType: 'xy'
+        },
+
+        title: {
+            text: 'Asteriods Sorted by (Diameter,Distance) and Albedo'
+        },
+
+        xAxis: {
+            gridLineWidth: 1
+        },
+
+        yAxis: {
+            startOnTick: false,
+            endOnTick: false
+        },
+        series: [{
+            data: [
+                [233.9200, 1.9885, 0.2383],
+                [530.0000, 2.1522, 0.4228],
+                [119.0700, 2.0825, 0.2268],
+                [185.1800, 1.9368, 0.2679],
+                [199.8300, 1.8361, 0.2766],
+                [135.8900, 1.8576, 0.2426],
+                [255.3300, 2.1478, 0.2094],
+                [140.5700, 1.7935, 0.2225],
+                [145.5000, 2.0650, 0.2096],
+                [107.5300, 2.0069, 0.2536],
+                [149.5200, 2.4533, 0.2869],
+                [107.6200, 2.1612, 0.2418],
+                [112.5900, 2.7901, 0.2149],
+                [122.5700, 2.2599, 0.2283],
+                [126.4200, 2.8549, 0.2509],
+                [103.2600, 1.8112, 0.2330],
+                [136.3900, 3.0505, 0.2299],
+                [106.5200, 2.5185, 0.2189],
+                [139.7700, 2.6553, 0.3840]
+            ],
+            marker: {
+                fillColor: {
+                    radialGradient: {
+                        cx: 0.4,
+                        cy: 0.4,
+                        r: 0.5
+                    },
+                    stops: [
+                        [0, 'rgba(255,255,255,0.5)'],
+                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(1.0).get('rgba')]
+                    ]
+                }
+            }
+
+        }]
+
+    });
+});
+</script>
+
+</HEAD>
+
+<BODY>
+
+<!-----NAVBAR----->
+<div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Asteroid Comparison</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+               <li class="active"><a href="/~jbullis/410_Project/Asteroid.html">Home</a></li>
+                <li><a href="/~jbullis/410_Project/About_Us.html">About Us</a></li>
+                <li><a href="/~jbullis/410_Project/Learned.html">What We've learned</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links to Graphs/Code<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/~jbullis/410_Project/graph1.html">Graph 1</a></li>
+                    <li><a href="/~jbullis/410_Project/graph2.html">Graph 2</a></li>
+                    <li><a href="/~jbullis/410_Project/graph3.html">Graph 3</a></li>
+                    <li><a href="/~jbullis/410_Project/graph4.html">Graph 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<div id="container" style="min-width:310px; max-width:600px height:400px;margin: 0 auto"></div>
+
+<div class="container">
+
+      <div class="starter-template">
+        <h1>First Graph Plot</h1>
+        <p class="lead">This is the spot to goa little more in depth as to what it is exactly that this graph is showing. How we produced it, what chart family we used, blah blah blah.</p>
+      </div>
+
+    </div>
+
+</BODY>
+</HTML>
