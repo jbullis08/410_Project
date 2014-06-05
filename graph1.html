@@ -3,12 +3,13 @@
 <title>First Graph of the Data</title>
 
 <link href="/~jbullis/410_Project/css/bootstrap.min.css" rel="stylesheet">
-<link href="starter-template.css" rel="stylesheet">
+<link href="/~jbullis/410_Project/css/starter-template.css" rel="stylesheet">
 
-<script src="/~jbullis/410_Project/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://code.highcharts.com/highcharts.js"></script>
 <script src="http://code.highcharts.com/highcharts-more.js"></script>
+<script src="/~jbullis/410_Project/js/bootstrap.min.js"></script>
+
 <script>
 $(function () {
     Highcharts.setOptions({
@@ -36,16 +37,31 @@ $(function () {
         },
 
         title: {
-            text: 'Asteriods Sorted by (Diameter,Distance) and Albedo'
+            text: 'Diameter vs. Distance by Albedo'
         },
-
         xAxis: {
-            gridLineWidth: 1
+            title: {
+                enabled: true,
+                text: 'Diameter (km)'
+            },
+            startOnTick: true,
+            endOnTick: true,
+            showLastLabel: true
         },
-
         yAxis: {
-            startOnTick: false,
-            endOnTick: false
+            title: {
+                text: 'Distance (AU)'
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'left',
+            verticalAlign: 'top',
+            x: 70,
+            y: 40,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+            borderWidth: 0
         },
         series: [{
             data: [
@@ -120,6 +136,8 @@ $(function () {
                     <li><a href="/~jbullis/410_Project/graph2.html">Graph 2</a></li>
                     <li><a href="/~jbullis/410_Project/graph3.html">Graph 3</a></li>
                     <li><a href="/~jbullis/410_Project/graph4.html">Graph 4</a></li>
+                    <li><a href="/~jbullis/410_Project/graph5.html">Graph 5</a></li>
+                    <li><a href="/~jbullis/410_Project/graph6.html">Graph 6</a></li>
                   </ul>
                 </li>
               </ul>
