@@ -10,30 +10,18 @@
 
     <title>Final Project for Physics 410</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="/~jbullis/410_Project/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="/~jbullis/410_Project/css/carousel.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="/~jbullis/410_Project/css/cover.css" rel="stylesheet">
     <script src="/~jbullis/410_Project/js/bootstrap.min.js"></script>
     <script src="/~jbullis/410_Project/js/docs.min.js"></script>
 
   </head>
 
-<!-- NAVBAR
-================================================== -->
+
   <body>
-<div class="navbar-wrapper">
+    <div class="navbar-wrapper">
       <div class="container">
 
         <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -55,11 +43,11 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links to Graphs/Code<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="/~jbullis/410_Project/graph1.html">Graph 1</a></li>
-                    <li><a href="/~jbullis/410_Project/graph2.html">Graph 2</a></li>
-                    <li><a href="/~jbullis/410_Project/graph3.html">Graph 3</a></li>
-                    <li><a href="/~jbullis/410_Project/graph4.html">Graph 4</a></li>
-                    <li><a href="/~jbullis/410_Project/graph5.html">Graph 5</a></li>
+                    <li><a href="/~jbullis/410_Project/graph2.html">Graph 1</a></li>
+                    <li><a href="/~jbullis/410_Project/graph4.html">Graph 2</a></li>
+                    <li><a href="/~jbullis/410_Project/graph1.html">Graph 3</a></li>
+                    <li><a href="/~jbullis/410_Project/graph5.html">Graph 4</a></li>
+                    <li><a href="/~jbullis/410_Project/graph3.html">Graph 5</a></li>
                     <li><a href="/~jbullis/410_Project/graph6.html">Graph 6</a></li>
                   </ul>
                 </li>
@@ -72,62 +60,22 @@
     </div>
 
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img data-src="holder.js/1200x300/auto/#000033:#000033/text:Graph 1" alt="Graph 1">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Absolute Magnitude</h1>
-              <p>For this graph we have graphed a specific range of abosolute magnitude's in the hopes of narrowing our list down to the best canidates that we will be able to observe.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img data-src="holder.js/1200x300/auto/#000033:#000033/text:Graph 2" alt="Graph 2">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Albedo vs. Mass</h1>
-		<p>For this particular graph we have gone on to compare the albedo vs. the mass of the asteroid. In the attempt to complile a list of very reflective and large asteroids that we will hopefully be able to see using the equipment available to us.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img data-src="holder.js/1200x300/auto/#000033:#000033/text:Graph 3" alt="Graph 3">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Timeline Plot</h1>
-              <p>This is a timeline plot of each day of the year with the "Top 50" object transits at midnight. It is laid out so hat we have caught the peak of each asteriod and when is the best time of the year to view it.</p>
-            </div>
-          </div>
-        </div>
-	 <div class="item">
-          <img data-src="holder.js/1200x300/auto/#000033:#000033/text:Graph 3" alt="Graph 3">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Numero 4</h1>
-              <p>This is a timeline plot of each day of the year with the "Top 50" object transits at midnight. It is laid out so hat we have caught the peak of each asteriod and when is the best time of the year to view it.</p>
-            </div>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="inner cover">
+            <h1 class="cover-heading">Final Project for Phys 410: Asteroid Comparison</h1>
+            <p>The purpose of this project was to take a data set of as many asteroids as we could find, and using characteristics like albedo, magnitude, distance, diameter, and others, determine a set of about 20 asteroids that could be studied in detail using Pine Mountain Observatory. We downloaded our dataset from the JPL database. The raw data contained information on 2,455 different asteroids. </p>
+
+            <p>We began reducing the dataset by limiting the asteroid selection to those that had characteristics that fell in a specific range. For example, we want asteroids that have a high albedo, low magnitude (bright), small distance, and large diameter. By narrowing down these ranges, we had information on 19 asteroids. We used an ephemeris module to collect information on the right ascension, declination, altitude, and azimuth of each asteroid from January 1, 2014 to December 31, 2014. Our next step was to determine when the asteroids were at an altitude greater than 30 degrees. </p>
+
+            <p>We created different plots with the characteristics and the peak information to determine if observations on these asteroids was going to be possible. In the end, our visualizations revealed that there are only a handful of those 20 asteroids that have the possibility of being observable. This is caused by the limited window in which weather permits observations, as well as the other characteristics like magnitude, distance, and albedo which are limited by the abilities of the Pine Mountain Observatory telescopes. </p>
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+    </div>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
 
   </body>
 </html>
